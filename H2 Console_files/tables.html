@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+Copyright 2004-2018 H2 Group. Multiple-Licensed under the MPL 2.0,
+and the EPL 1.0 (http://h2database.com/html/license.html).
+Initial Developer: H2 Group
+-->
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>H2 Console</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="tables_data/tree.js"></script>
+<script type="text/javascript">
+<!--
+setNode(0, 0, 0, 'database', 'jdbc:h2:~/test', null);
+setNode(1, 0, 1, 'folder', 'INFORMATION_SCHEMA', null);
+setNode(2, 1, 2,  'table', 'CATALOGS', 'javascript:ins(\'INFORMATION_SCHEMA.CATALOGS\',true)');
+setNode(3, 1, 2,  'table', 'COLLATIONS', 'javascript:ins(\'INFORMATION_SCHEMA.COLLATIONS\',true)');
+setNode(4, 1, 2,  'table', 'COLUMNS', 'javascript:ins(\'INFORMATION_SCHEMA.COLUMNS\',true)');
+setNode(5, 1, 2,  'table', 'COLUMN_PRIVILEGES', 'javascript:ins(\'INFORMATION_SCHEMA.COLUMN_PRIVILEGES\',true)');
+setNode(6, 1, 2,  'table', 'CONSTANTS', 'javascript:ins(\'INFORMATION_SCHEMA.CONSTANTS\',true)');
+setNode(7, 1, 2,  'table', 'CONSTRAINTS', 'javascript:ins(\'INFORMATION_SCHEMA.CONSTRAINTS\',true)');
+setNode(8, 1, 2,  'table', 'CROSS_REFERENCES', 'javascript:ins(\'INFORMATION_SCHEMA.CROSS_REFERENCES\',true)');
+setNode(9, 1, 2,  'table', 'DOMAINS', 'javascript:ins(\'INFORMATION_SCHEMA.DOMAINS\',true)');
+setNode(10, 1, 2,  'table', 'FUNCTION_ALIASES', 'javascript:ins(\'INFORMATION_SCHEMA.FUNCTION_ALIASES\',true)');
+setNode(11, 1, 2,  'table', 'FUNCTION_COLUMNS', 'javascript:ins(\'INFORMATION_SCHEMA.FUNCTION_COLUMNS\',true)');
+setNode(12, 1, 2,  'table', 'HELP', 'javascript:ins(\'INFORMATION_SCHEMA.HELP\',true)');
+setNode(13, 1, 2,  'table', 'INDEXES', 'javascript:ins(\'INFORMATION_SCHEMA.INDEXES\',true)');
+setNode(14, 1, 2,  'table', 'IN_DOUBT', 'javascript:ins(\'INFORMATION_SCHEMA.IN_DOUBT\',true)');
+setNode(15, 1, 2,  'table', 'KEY_COLUMN_USAGE', 'javascript:ins(\'INFORMATION_SCHEMA.KEY_COLUMN_USAGE\',true)');
+setNode(16, 1, 2,  'table', 'LOCKS', 'javascript:ins(\'INFORMATION_SCHEMA.LOCKS\',true)');
+setNode(17, 1, 2,  'table', 'QUERY_STATISTICS', 'javascript:ins(\'INFORMATION_SCHEMA.QUERY_STATISTICS\',true)');
+setNode(18, 1, 2,  'table', 'REFERENTIAL_CONSTRAINTS', 'javascript:ins(\'INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS\',true)');
+setNode(19, 1, 2,  'table', 'RIGHTS', 'javascript:ins(\'INFORMATION_SCHEMA.RIGHTS\',true)');
+setNode(20, 1, 2,  'table', 'ROLES', 'javascript:ins(\'INFORMATION_SCHEMA.ROLES\',true)');
+setNode(21, 1, 2,  'table', 'SCHEMATA', 'javascript:ins(\'INFORMATION_SCHEMA.SCHEMATA\',true)');
+setNode(22, 1, 2,  'table', 'SEQUENCES', 'javascript:ins(\'INFORMATION_SCHEMA.SEQUENCES\',true)');
+setNode(23, 1, 2,  'table', 'SESSIONS', 'javascript:ins(\'INFORMATION_SCHEMA.SESSIONS\',true)');
+setNode(24, 1, 2,  'table', 'SESSION_STATE', 'javascript:ins(\'INFORMATION_SCHEMA.SESSION_STATE\',true)');
+setNode(25, 1, 2,  'table', 'SETTINGS', 'javascript:ins(\'INFORMATION_SCHEMA.SETTINGS\',true)');
+setNode(26, 1, 2,  'table', 'SYNONYMS', 'javascript:ins(\'INFORMATION_SCHEMA.SYNONYMS\',true)');
+setNode(27, 1, 2,  'table', 'TABLES', 'javascript:ins(\'INFORMATION_SCHEMA.TABLES\',true)');
+setNode(28, 1, 2,  'table', 'TABLE_CONSTRAINTS', 'javascript:ins(\'INFORMATION_SCHEMA.TABLE_CONSTRAINTS\',true)');
+setNode(29, 1, 2,  'table', 'TABLE_PRIVILEGES', 'javascript:ins(\'INFORMATION_SCHEMA.TABLE_PRIVILEGES\',true)');
+setNode(30, 1, 2,  'table', 'TABLE_TYPES', 'javascript:ins(\'INFORMATION_SCHEMA.TABLE_TYPES\',true)');
+setNode(31, 1, 2,  'table', 'TRIGGERS', 'javascript:ins(\'INFORMATION_SCHEMA.TRIGGERS\',true)');
+setNode(32, 1, 2,  'table', 'TYPE_INFO', 'javascript:ins(\'INFORMATION_SCHEMA.TYPE_INFO\',true)');
+setNode(33, 1, 2,  'table', 'USERS', 'javascript:ins(\'INFORMATION_SCHEMA.USERS\',true)');
+setNode(34, 1, 2,  'table', 'VIEWS', 'javascript:ins(\'INFORMATION_SCHEMA.VIEWS\',true)');
+setNode(35, 0, 1, 'users', 'Users', null);
+setNode(36, 1, 1, 'user', 'SA', null);
+setNode(37, 2, 2, 'type', 'Admin', null);
+setNode(38, 0, 0, 'info', 'H2 1.4.197 (2018-03-18)', null);
+refreshQueryTables();
+//-->
+</script>
+
+</head>
+<body>
+
+<div class="tree">
+<script type="text/javascript">
+<!--
+writeTree();
+//-->
+</script><img src="tables_data/tree_database.gif">&nbsp;jdbc:h2:~/test<br><img onclick="hit(1);" id="join1" src="tables_data/tree_plus.gif"><img src="tables_data/tree_folder.gif">&nbsp;INFORMATION_SCHEMA<br><div id="div1" style="display: none;"><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="CATALOGS" href="javascript:ins('INFORMATION_SCHEMA.CATALOGS',true)">CATALOGS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="COLLATIONS" href="javascript:ins('INFORMATION_SCHEMA.COLLATIONS',true)">COLLATIONS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="COLUMNS" href="javascript:ins('INFORMATION_SCHEMA.COLUMNS',true)">COLUMNS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="COLUMN_PRIVILEGES" href="javascript:ins('INFORMATION_SCHEMA.COLUMN_PRIVILEGES',true)">COLUMN_PRIVILEGES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="CONSTANTS" href="javascript:ins('INFORMATION_SCHEMA.CONSTANTS',true)">CONSTANTS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="CONSTRAINTS" href="javascript:ins('INFORMATION_SCHEMA.CONSTRAINTS',true)">CONSTRAINTS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="CROSS_REFERENCES" href="javascript:ins('INFORMATION_SCHEMA.CROSS_REFERENCES',true)">CROSS_REFERENCES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="DOMAINS" href="javascript:ins('INFORMATION_SCHEMA.DOMAINS',true)">DOMAINS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="FUNCTION_ALIASES" href="javascript:ins('INFORMATION_SCHEMA.FUNCTION_ALIASES',true)">FUNCTION_ALIASES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="FUNCTION_COLUMNS" href="javascript:ins('INFORMATION_SCHEMA.FUNCTION_COLUMNS',true)">FUNCTION_COLUMNS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="HELP" href="javascript:ins('INFORMATION_SCHEMA.HELP',true)">HELP</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="INDEXES" href="javascript:ins('INFORMATION_SCHEMA.INDEXES',true)">INDEXES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="IN_DOUBT" href="javascript:ins('INFORMATION_SCHEMA.IN_DOUBT',true)">IN_DOUBT</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="KEY_COLUMN_USAGE" href="javascript:ins('INFORMATION_SCHEMA.KEY_COLUMN_USAGE',true)">KEY_COLUMN_USAGE</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="LOCKS" href="javascript:ins('INFORMATION_SCHEMA.LOCKS',true)">LOCKS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="QUERY_STATISTICS" href="javascript:ins('INFORMATION_SCHEMA.QUERY_STATISTICS',true)">QUERY_STATISTICS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="REFERENTIAL_CONSTRAINTS" href="javascript:ins('INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS',true)">REFERENTIAL_CONSTRAINTS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="RIGHTS" href="javascript:ins('INFORMATION_SCHEMA.RIGHTS',true)">RIGHTS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="ROLES" href="javascript:ins('INFORMATION_SCHEMA.ROLES',true)">ROLES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SCHEMATA" href="javascript:ins('INFORMATION_SCHEMA.SCHEMATA',true)">SCHEMATA</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SEQUENCES" href="javascript:ins('INFORMATION_SCHEMA.SEQUENCES',true)">SEQUENCES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SESSIONS" href="javascript:ins('INFORMATION_SCHEMA.SESSIONS',true)">SESSIONS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SESSION_STATE" href="javascript:ins('INFORMATION_SCHEMA.SESSION_STATE',true)">SESSION_STATE</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SETTINGS" href="javascript:ins('INFORMATION_SCHEMA.SETTINGS',true)">SETTINGS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="SYNONYMS" href="javascript:ins('INFORMATION_SCHEMA.SYNONYMS',true)">SYNONYMS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TABLES" href="javascript:ins('INFORMATION_SCHEMA.TABLES',true)">TABLES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TABLE_CONSTRAINTS" href="javascript:ins('INFORMATION_SCHEMA.TABLE_CONSTRAINTS',true)">TABLE_CONSTRAINTS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TABLE_PRIVILEGES" href="javascript:ins('INFORMATION_SCHEMA.TABLE_PRIVILEGES',true)">TABLE_PRIVILEGES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TABLE_TYPES" href="javascript:ins('INFORMATION_SCHEMA.TABLE_TYPES',true)">TABLE_TYPES</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TRIGGERS" href="javascript:ins('INFORMATION_SCHEMA.TRIGGERS',true)">TRIGGERS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="TYPE_INFO" href="javascript:ins('INFORMATION_SCHEMA.TYPE_INFO',true)">TYPE_INFO</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="USERS" href="javascript:ins('INFORMATION_SCHEMA.USERS',true)">USERS</a><br><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_table.gif">&nbsp;<a id="VIEWS" href="javascript:ins('INFORMATION_SCHEMA.VIEWS',true)">VIEWS</a><br></div><img onclick="hit(35);" id="join35" src="tables_data/tree_plus.gif"><img src="tables_data/tree_users.gif">&nbsp;Users<br><div id="div35" style="display: none;"><img src="tables_data/tree_empty.gif"><img onclick="hit(36);" id="join36" src="tables_data/tree_plus.gif"><img src="tables_data/tree_user.gif">&nbsp;SA<br><div id="div36" style="display: none;"><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_empty.gif"><img src="tables_data/tree_type.gif">&nbsp;Admin<br></div></div><img src="tables_data/tree_info.gif">&nbsp;H2 1.4.197 (2018-03-18)<br>
+</div>
+
+<p class="error">
+    
+</p>
+
+
+
+</body></html>
